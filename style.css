@@ -1,0 +1,166 @@
+/* style.css */
+html {
+  scroll-behavior: smooth; /* Aktiviert das sanfte Scrollen */
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg'); /* Dein Hintergrundbild hier einfügen */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Fixiert das Hintergrundbild */
+  height: 100%;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparenter Hintergrund für Header */
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f39c12; /* Farbe beim Hover */
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Halbtransparente Sektionen */
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f39c12; /* Akzentfarbe für Titel */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-images img {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.1);
+}
+
+.features-box {
+  background-color: rgba(0, 0, 0, 0.8); /* Dunklerer Hintergrund für die Box */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-box ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.features-box ul li {
+  margin: 15px 0;
+}
+
+.features-box ul li strong {
+  color: #f39c12; /* Hervorhebung der wichtigen Begriffe */
+}
+
+.features-box ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Leichte Hervorhebung beim Hover */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Kontakt Sektion */
+#contact {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 1rem;
+}
+
+/* Animiertes Hintergrundbild */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg'); /* Dein Hintergrundbild hier einfügen */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Fixiert das Hintergrundbild */
+  height: 100%;
+  color: white;
+  animation: moveBackground 20s linear infinite; /* Animation des Hintergrundbildes */
+}
+
+/* Animation des Hintergrunds */
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
